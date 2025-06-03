@@ -92,7 +92,7 @@ You can use the icon.sketch file. Please send an icon in the 1024x1024 resolutio
 - [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - But also an amazing icon designer !
 - [Speedyfriend67](https://twitter.com/speedyfriend67) - 🇰🇷 Korean - Actually speedrunned the translation
 - [Spy_G](https://twitter.com/spy_g_) - 🇸🇪 Swedish - Funny nickname
-- [Straight Tamago](https://twitter.com/straight_tamago) - 🇯🇵 Japenese - Lovely friend that always helps in code !
+- [Straight Tamago](https://twitter.com/straight_tamago) - 🇯🇵 Japanese - Lovely friend that always helps in code !
 - [ting0441](https://twitter.com/Ting2021) - 🇨🇳 Chinese (Simplified) - UI Bug Reporter
 - [W$D$B](https://twitter.com/Alz971) - 🇮🇹 Italian - First to accomplish 100% in translation
-- [yyyywaiwai](https://twitter.com/yyyyyy_public) - 🇯🇵 Japenese - Reviewer but also filled the gaps !
+- [yyyywaiwai](https://twitter.com/yyyyyy_public) - 🇯🇵 Japanese - Reviewer but also filled the gaps !
