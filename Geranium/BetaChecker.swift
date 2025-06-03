@@ -11,11 +11,12 @@ import SwiftUI
 
 struct BetaView: View {
     @Environment(\.dismiss) var dismiss
+    @State private var textPlaceholder = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
+    @State private var validation = ""
+    @State private var isEnrolled = false
+    var timer: Timer?
+
     var body: some View {
-        @State var textPlaceHorder = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
-        @State var validation = ""
-        @State var isEnrolled = false
-        var timer: Timer?
         VStack {
             Image(uiImage: Bundle.main.icon!)
                 .cornerRadius(10)
@@ -26,7 +27,7 @@ struct BetaView: View {
             Text("Please copy your UUID and send it to a developer in charge.")
                 .padding()
                 .multilineTextAlignment(.center)
-            Text(textPlaceHorder)
+            Text(textPlaceholder)
                 .padding()
                 .multilineTextAlignment(.center)
                 .textSelection(.enabled)
