@@ -17,6 +17,7 @@ struct LocSimView: View {
     @State private var long: Double = 0.0
     @State private var tappedCoordinate: EquatableCoordinate? = nil
     @State private var bookmarkSheetTggle: Bool = false
+    @State private var searchSheetToggle: Bool = false
     var body: some View {
             if #available(iOS 16.0, *) {
                 NavigationStack {
@@ -111,6 +112,16 @@ struct LocSimView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
+                    searchSheetToggle.toggle()
+                }) {
+                    Image(systemName: "magnifyingglass")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
                     bookmarkSheetTggle.toggle()
                 }) {
                     Image(systemName: "bookmark")
@@ -122,6 +133,9 @@ struct LocSimView: View {
         }
         .sheet(isPresented: $bookmarkSheetTggle) {
             BookMarkSlider(lat: $lat, long: $long)
+        }
+        .sheet(isPresented: $searchSheetToggle) {
+            LocationSearchView(lat: $lat, long: $long)
         }
     }
 }
